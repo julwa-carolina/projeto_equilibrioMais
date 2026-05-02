@@ -1,217 +1,121 @@
-:root {
-    --dark-green: #003d1c;
-    --medium-green: #4d825e;
-    --light-green: #d1dbbd;
-    --white-bg: #f2f5e9;
-    --input-bg: #e9edde;
-} 
-/* MUDAR AS CORES DO ROOT */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
 }
+/* fazer um root */
 
 body {
-    background-color: var(--dark-green);
+    background-color: #e9e6d8;
+}
+
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    gap: 40px;
     padding: 20px;
+    font-weight: bold;
 }
 
-main {  
-    width: 90vw;
-    background-color: var(--white-bg);
-    border-radius: 0px; 
-    overflow: hidden;
+nav a {
+    text-decoration: none;
+    color: #000;
 }
 
-.container_tela_de_login {
-    display: flex;
-    min-height: 80vh;
+nav a.active {
+    border-bottom: 3px solid green;
 }
 
-/* --- LADO ESQUERDO --- */
-.login{
-    flex: 1;
-    padding: 5px;
-    background-color: var(--white-bg);
+/* HEADER */
+.header {
+    background-color: #2f6b45;
+    color: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
-/* configuracoes da logo roxa */
-#img-logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
+.header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-img {  
-    width: 120px;
-} 
-/* fim configuracoes da logo roxa */
+.header p {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-.container-conteudo {
-    max-width: 350px;
-    margin: 0 auto;
+#buttonAdd {
     text-align: center;
 }
 
-h1 {
-    color: var(--dark-green);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 0.85rem;
-    color: #444;
-    margin-bottom: 30px;
-}
-
-.login-box {
-    background-color: var(--medium-green);
-    padding: 30px;
-    border-radius: 40px;
-    color: white;
-}
-
-.login-box h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-}
-
-.input-group {
-    background-color: var(--input-bg);
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.input-group input {
-    background: none;
+.btnAdd {
+    background-color: #1f4d32;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
     border: none;
-    outline: none;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.esq-senha, .criar-conta  {
-    display: block;
-    text-align: left;
-    font-size: 0.8rem;
-    color: #eee;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-
-.botao-entrar {
-    font-size: 1em;
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--dark-green);
-    color: white;
-    font-weight: bold;
     cursor: pointer;
-    margin-bottom: 10px;
+}
+/* transformar o botao em uma cor mais clara ao passar o mouse por cima do botao */
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+
 }
 
-.criar-conta a, .esq-senha a { 
-    color: var(--light-green); 
+.search span {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    background-color: #1f4d32;
+    text-align: center;
+    color: white;
 }
 
-.social-icons {
-    margin-top: 25px;
+.search i {
+    background-color: #1f4d32;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* CARDS */
+.container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 1.2rem;
-}
-/* --- FIM DO LADO ESQUERDO --- */
-
-/* --- LADO DIREITO --- */
-.info {
-    flex: 1.2;
-    background-image: linear-gradient(to left, #6ca276, #ecedda);
-    padding: 40px;
-    position: relative;
-    /* Curva sutil separando os lados */
-    border-top-left-radius: 100px 50%;
-    border-bottom-left-radius: 100px 50%;
+    padding: 20px;
 }
 
-.nav-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav-right a {
-    text-decoration: none;
-    color: var(--dark-green);
-    font-size: 0.9rem;
-}
-
-.barra-pesquisa {
-    background-color: var(--dark-green);
-    border-radius: 20px;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-}
-
-.barra-pesquisa input {
-    background: none;
-    border: none;
-    color: white;
-    outline: none;
-    width: 100px;
-}
-
-.img-vegetais {
+.card {
+    background-color: #dcd8c7;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
     text-align: center;
-    padding: 60px 0;
 }
 
-.img-vegetais img {
-    width: 650px;
+.card p {
+    margin-top: 15px;
 }
 
-.info-adicional {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    left: 100px;
-    text-align: right;
+.icone img {
+    width: 150px;
 }
 
-.info-adicional p {
-    font-size: 0.9rem;
-    color: var(--dark-green);
-    font-style: italic;
-    line-height: 1.4;
-}
-
-.saiba-mais {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: var(--dark-green);
-    font-size: 0.8rem;
-}
-/* --- FIM DO LADO DIREITO --- */
-
-
-/* Responsividade (TERMINAR) */
-@media (max-width: 800px) {
-    .inner-card { flex-direction: column; }
-    .info-side { border-radius: 0; }
+/* RESPONSIVO */
+@media(max-width: 900px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
