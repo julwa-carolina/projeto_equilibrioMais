@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --dark-green: #003d1c;
+    --medium-green: #266c44;
+    --light-green: #d1dbbd;
+    --white-bg: #f2f5e9;
+    --input-bg: #e9edde;
+    ---white: #ffffff;
+} 
+
+body {
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {  
+    width: 90vw;
+    min-height: 80vh;
+    background-color: var(--white-bg);
+    border-radius: 19px; 
+}
+
+/* CONTAINER */
+/* .container-cadastro {
+    background-color: aliceblue;
+} */
+
+/* TOPO */
+.header {
+    background-color: var(--medium-green);
+    border-radius: 8px 8px 0px 0px;
+    padding: 20px;
+}
+
+.header h1, p {
+    margin-bottom: 5px;
+    color: var(---white);
+}
+
+/* CONTAINER COM OS FORMS*/
+.container-card {
+    padding: 30px;
+}
+
+/* PERFIL */
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 5px solid var(--white-bg);
+    outline: 4px solid var(--dark-green);
+}
+
+.info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.info p {
+    color: black;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: var(--medium-green);
+    color: white;
+    border: none;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* FORM */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+}
+
+.campo input, select {
+    padding: 10px 0px 10px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #a8c3a1;
+}
+
+.campo p {
+    color: black;
+    margin-top: 10px;
+}
+
+.campo a {
+    color: var(--medium-green);
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(---white);
+}
+
+

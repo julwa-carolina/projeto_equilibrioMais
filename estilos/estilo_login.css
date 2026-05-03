@@ -1,0 +1,217 @@
+:root {
+    --dark-green: #003d1c;
+    --medium-green: #266c44;
+    --light-green: #d1dbbd;
+    --white-bg: #f2f5e9;
+    --input-bg: #e9edde;
+} 
+/* MUDAR AS CORES DO ROOT */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {  
+    width: 90vw;
+    background-color: var(--white-bg);
+    border-radius: 0px; 
+    overflow: hidden;
+}
+
+.container_tela_de_login {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* --- LADO ESQUERDO --- */
+.login{
+    flex: 1;
+    padding: 5px;
+    background-color: var(--white-bg);
+}
+
+/* configuracoes da logo roxa */
+#img-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+img {  
+    width: 120px;
+} 
+/* fim configuracoes da logo roxa */
+
+.container-conteudo {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    background-color: var(--medium-green);
+    padding: 30px;
+    border-radius: 40px;
+    color: white;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    background-color: var(--input-bg);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-group input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.esq-senha, .criar-conta  {
+    display: block;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #eee;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.botao-entrar {
+    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--dark-green);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.criar-conta a, .esq-senha a { 
+    color: var(--light-green); 
+}
+
+.social-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+/* --- FIM DO LADO ESQUERDO --- */
+
+/* --- LADO DIREITO --- */
+.info {
+    flex: 1.2;
+    background-image: linear-gradient(to left, #6ca276, #ecedda);
+    padding: 40px;
+    position: relative;
+    /* Curva sutil separando os lados */
+    border-top-left-radius: 100px 50%;
+    border-bottom-left-radius: 100px 50%;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: var(--dark-green);
+    font-size: 0.9rem;
+}
+
+.barra-pesquisa {
+    background-color: var(--dark-green);
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-pesquisa input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100px;
+}
+
+.img-vegetais {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.img-vegetais img {
+    width: 650px;
+}
+
+.info-adicional {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    left: 100px;
+    text-align: right;
+}
+
+.info-adicional p {
+    font-size: 0.9rem;
+    color: var(--dark-green);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.saiba-mais {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--dark-green);
+    font-size: 0.8rem;
+}
+/* --- FIM DO LADO DIREITO --- */
+
+
+/* Responsividade (TERMINAR) */
+@media (max-width: 800px) {
+    .inner-card { flex-direction: column; }
+    .info-side { border-radius: 0; }
+}

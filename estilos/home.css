@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --dark-green: #003d1c;
+    --medium-green: #266c44;
+    --light-green: #d1dbbd;
+    --white-bg: #f2f5e9;
+    --input-bg: #e9edde;
+    ---white: #ffffff;
+} 
+
+body {
+    background-color:var(--white-bg);
+}
+
+
+/* HEADER */
+.header {
+    background-color: var(--medium-green);
+    color:var(---white);
+    margin: 0px 20px 20px 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#img-logo {
+    display: inline;
+}
+
+#img-logo img {
+    width: 60px;
+
+}
+/* NAVBAR */
+nav {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    font-weight: bold;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a.active {
+    border-bottom: 3px solid var(--dark-green);
+}
+
+#buttonAdd {
+    text-align: center;
+}
+
+.btnAdd {
+    background-color: var(--dark-green);
+    color: var(---white);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnAdd a {
+    text-decoration: none;
+    color: var(---white);
+}
+/* transformar o botao em uma cor mais clara ao passar o mouse por cima do botao */
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+
+}
+
+.search span {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    background-color: var(--dark-green);
+    text-align: center;
+    color: var(---white);
+}
+
+.search i {
+    background-color: var(--dark-green);
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 0px 4px 4px 0px;
+}
+.container-cards {
+    background-color: var(--dark-green);
+    height: 600px;
+}
+/* CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--white-bg); /*nao sei que cor colocar nos card!!!!!!!!!!!!*/
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.card p {
+    margin-top: 15px;
+}
+
+
+.icone img {
+    width: 150px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
