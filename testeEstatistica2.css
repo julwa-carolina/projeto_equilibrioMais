@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #e6e6d9;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background: #d4d4c2;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    border-bottom: 3px solid green;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+/* TOPO */
+.topo {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    background: #f2f2e6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ALERTA */
+.alerta-box {
+    background: orange;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background: #f3c86a;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.destaque {
+    grid-column: span 2;
+    background: #e6b84f;
+}
+
+/* RELATÓRIO */
+.relatorio {
+    margin: 20px;
+    padding: 20px;
+    background: #5a8f62;
+    border-radius: 10px;
+    height: 600px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Estatísticas</title>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="testeEstatistica2.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="logo">🍇➕</div>
+        <a href="#">Perfil</a>
+        <a href="#">Home</a>
+        <a href="#" class="active">Estatísticas</a>
+        <a href="#">Ultraprocessados</a>
+        <a href="#">Saudáveis</a>
+        <a href="#">Receitas</a>
+    </nav>
+
+    <!-- TOPO -->
+    <div class="topo">
+
+        <!-- GRÁFICO PIZZA -->
+        <div class="box">
+            <h3>Total de nutrientes</h3>
+            <canvas id="pizzaChart"></canvas>
+        </div>
+
+        <!-- ALERTA -->
+        <div class="box alerta">
+            <h3>Alerta nutricional</h3>
+
+            <div class="alerta-box">
+                ⚠️ Consumo excessivo de ultraprocessados!
+            </div>
+
+            <div class="cards">
+                <div class="card">Açúcar<br><strong>150g</strong></div>
+                <div class="card">Gordura saturada<br><strong>57g</strong></div>
+                <div class="card">Sódio<br><strong>11g</strong></div>
+                <div class="card">Gordura trans<br><strong>51g</strong></div>
+                <div class="card destaque">
+                    Calorias<br><strong>3532 kcal</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- DONUT -->
+        <div class="box">
+            <canvas id="donutChart"></canvas>
+        </div>
+
+    </div>
+
+    <!-- RELATÓRIO -->
+    <div class="relatorio">
+        <h3>Relatório semanal</h3>
+        <canvas id="linhaChart"></canvas>
+    </div>
+
+</div>
+
+<script src="testeEstatistica2.js"></script>
+</body>
+</html>
