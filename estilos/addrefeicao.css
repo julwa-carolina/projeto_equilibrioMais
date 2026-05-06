@@ -85,7 +85,7 @@ button {
     height: 25px;
 }
 
-#refeicao {
+#Addrefeicao {
     height: 25px;
 }
 
@@ -108,3 +108,11 @@ button {
     height: 30px;
     padding: 10px;
 }
+
+.btnCalcular {
+    margin-top: 15px;
+}
+
+/* incrementacoes posteriores: Adicionar o bloco "item" quando o usuario apertar em "adiconar refeicao" OU quando o usuario apertar em "adicionar refeicao" surge uma linha nova no bloco*/
+
+/* podemos criar um botao para o usuario adicionar os blocos "item" */
