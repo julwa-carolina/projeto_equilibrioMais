@@ -1,3 +1,7 @@
+// TESTE DO JS DA PARTE DE ESTATISTICA!!!!!!!!!
+
+
+
 // GRÁFICO PIZZA
 new Chart(document.getElementById("pizzaChart"), {
     type: "pie",
