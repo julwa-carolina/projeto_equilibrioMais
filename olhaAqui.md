@@ -5,3 +5,25 @@ fiz dois testes com a parte de estatisticas, o 2 tem coisas que nunca vi e o 1 e
 
 Temos mais ou menos seis semanas para finalizarmos o projeto 
 
+LOGIN 👍
+<br>
+CADASTRO 👍
+<br>
+CONTATO
+<br>
+SOBRE NOS
+<br>
+PERFIL DO USUARIO 👍
+<br>
+HOME 
+<br>
+ ADICIONAR REFEICAO 👍
+ <br>
+ ESTATISTICA 
+ <br>
+ ULTRAPROCESSADOS CONSUMIDOS + TELA INFORMATIVA SOBRE O ULTRAPROCESSADO
+ <br>
+ SAUDAVEIS CONSUMIDOS + TELA INFORMATIVA SOBRE O ALIMENTO SAUDAVEL
+  <br>
+ SUGESTOES DE RECEITAS + TELA COM A RECEITA EM SI
+
