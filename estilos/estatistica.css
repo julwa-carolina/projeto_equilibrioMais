@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+#estatisticas {
+    margin-top: 60px;
+}
+#estatisticas h1 {
+    text-align: center;
+    margin: 20px;
+    color: #324936;
+    font-weight: bold
+}
+.container-graficos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.boxPizza {
+    background: #f2f2e6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ALERTA */
+.alerta-box {
+    background: orange;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.estatisticaCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cardNutri {
+    background: #f3c86a;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.destaque {
+    grid-column: span 2;
+    background: #e6b84f;
+}
+
+/* RELATÓRIO */
+.relatorio {
+    margin: auto;
+    padding: 20px;
+    background: #5a8f62;
+    border-radius: 10px;
+    text-align: center;
+    width: 60vw;
+    height: 600px;
+}
