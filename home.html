@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equilibrio+</title>
-    <link rel="shortcut icon" href="plus-solid-full.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/logoGrandeParaFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/estatistica.css">
     <script src="https://kit.fontawesome.com/af61149184.js" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
 
 <body>
@@ -18,8 +22,8 @@
           
           <nav> <!--MENU DE NAVEGACAO -->
               <a href="perfil.html">Perfil</a>
-              <a href="#" class="active">Home</a>
-              <a href="#">Estatísticas</a>
+              <a href="#home" class="active">Home</a>
+              <a href="#estatisticas">Estatísticas</a>
               <a href="#">Principais ultraprocessados</a>
               <a href="#">Principais alimentos saudáveis</a>
               <a href="#">Sugestões de receitas</a>
@@ -27,44 +31,85 @@
       </div>
   </header> <!-- FIM DO HEADER -->
 
-    <div class="header">
-        <h1>Bem-vindo ao Equilibrio+</h1>
-        <p>Coloque os alimentos consumidos nas suas refeições e analisaremos seu consumo sobre o consumo de ultraprocessados</p>
-        <div id="buttonAdd">
-            <button class="btnAdd"><a href="addrefeicao.html">+ adicionar refeições diárias</a></button>
+    <section id="home">
+        <div class="header">
+            <h1>Bem-vindo ao Equilibrio+</h1>
+            <p>Coloque os alimentos consumidos nas suas refeições e analisaremos seu consumo sobre o consumo de ultraprocessados</p>
+            <div id="buttonAdd">
+                <button class="btnAdd"><a href="addrefeicao.html">+ adicionar refeições diárias</a></button>
+            </div>
         </div>
-    </div>
+        <div class="search">
+            <span> O que o software pode fazer?</span><i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+        </div>
+        <section class="container-cards"> <!--CONTAINER COM OS CARDS-->
+                <!-- CARDS -->
+                <div class="container">
+                    <div class="card">
+                        <div class="icone"><img src="imagens/chart-pie-solid.png" alt=""></div>
+                        <p>Análise de nutrientes</p>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icone"><img src="imagens/clipboard-regular.png" alt=""></div>
+                        <p>Relatório alimentar</p>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icone"><img src="imagens/triangle-exclamation-solid.png" alt=""></div>
+                        <p>Alerta de ultraprocessados</p>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icone"><img src="imagens/utensils-solid.png" alt=""></div>
+                        <p>Sugestões de receitas</p>
+                    </div>
+                </div>
+        </section> <!--FIM DO CONTAINER COM OS CARDS-->
+    </section>
 
-    <div class="search">
-        <span> O que o software pode fazer?</span><i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i> 
-    </div>
+    <section id="estatisticas"> <!--CONTAINER ESTATISTICAS-->
+        <h1>Estatísticas Nutricionais</h1>
+        <div class="container-graficos">
 
-    <section class="container-cards"> <!--CONTAINER COM OS CARDS-->
-            <!-- CARDS -->
-            <div class="container">
-                <div class="card">
-                    <div class="icone"><img src="imagens/chart-pie-solid.png" alt=""></div>
-                    <p>Análise de nutrientes</p>
+            <!-- GRÁFICO PIZZA -->
+            <div class="boxPizza">
+                <h2>Total de nutrientes</h2>
+                <canvas id="pizzaChart"></canvas>
+            </div>
+
+            <!-- INFO ALERTA -->
+            <div class="boxAlerta">
+                <h2>Alerta nutricional</h2>
+
+                <div class="alerta-box">
+                    ⚠️ Consumo excessivo de ultraprocessados!
                 </div>
-        
-                <div class="card">
-                    <div class="icone"><img src="imagens/clipboard-regular.png" alt=""></div>
-                    <p>Relatório alimentar</p>
-                </div>
-        
-                <div class="card">
-                    <div class="icone"><img src="imagens/triangle-exclamation-solid.png" alt=""></div>
-                    <p>Alerta de ultraprocessados</p>
-                </div>
-        
-                <div class="card">
-                    <div class="icone"><img src="imagens/utensils-solid.png" alt=""></div>
-                    <p>Sugestões de receitas</p>
+
+                <div class="estatisticaCards">
+                    <div class="cardNutri">Açúcar<br><strong>150g</strong></div>
+                    <div class="cardNutri">Gordura saturada<br><strong>57g</strong></div>
+                    <div class="cardNutri">Sódio<br><strong>11g</strong></div>
+                    <div class="cardNutri">Gordura trans<br><strong>51g</strong></div>
+                    <div class="cardNutri destaque">
+                        Calorias<br><strong>3532 kcal</strong>
+                    </div>
                 </div>
             </div>
-    </section> <!--FIM DO CONTAINER COM OS CARDS-->
-    <section> <!--CONTAINER ESTATISTICAS-->
-        
-    </section>
+
+            <!-- GRAFICO "DONUT" -->
+            <div class="boxPizza">
+                <canvas id="donutChart"></canvas>
+            </div>
+
+        </div>
+
+        <!-- RELATÓRIO -->
+        <div class="relatorio">
+            <h2>Relatório semanal</h2>
+            <canvas id="linhaChart"></canvas>
+        </div>
+        <script src="estatistica.js"></script>
+    </section> <!-- FIM DO CONTAINER ESTATISTICAS-->
 </body>
 </html>
