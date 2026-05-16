@@ -1,121 +1,125 @@
 :root {
-    --dark-green: #003d1c;
-    --medium-green: #4d825e;
-    --light-green: #d1dbbd;
-    --white-bg: #f2f5e9;
-    --input-bg: #e9edde;
-} 
+            --bg-dark: #052a1a;        /* Verde escuro do fundo */
+            --card-beige: #e9e9d6;     /* Bege do container */
+            --text-green: #06321d;     /* Verde escuro do texto */
+            --divider-color: #c9ceb8;  /* Cor da linha divisória */
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Public Sans', sans-serif;
+        }
 
-body {
-    background-color: var(--dark-green);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        body {
+            background-color: var(--bg-dark);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
 
-.container {
-    width: 70vw;
-    height: 670px;
-    background-color: #e9e5d8;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-/*     padding: 40px; */
-}
+        /* Botão de Saída (Canto Superior Direito) */
+        .exit-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 21px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
 
-.left {
-    width: 55%;
-}
+        
 
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0 0 20px;
-}
+        /* Container Principal */
+        .contact-card {
+            background-color: var(--card-beige);
+            width: 80%;
+            height: 700px;
+            border-radius: 15px;
+            display: flex;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
 
-.logo {
-    width: 120px; /* diminui para ficar proporcional */
-    padding: 0;
-}
+        /* Lado Esquerdo - Informações */
+        .info-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.logo-title h1 {
-    margin: 0;
-}
+        h1 {
+            color: var(--text-green);
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
 
-h1 {
-    font-size: 56px;
-    color: var(--medium-green);
-    font-weight: 700;
-}
+        .description {
+            font-size: 20px;
+            line-height: 1.4;
+            color: #333;
+            margin-bottom: 25px;
+            max-width: 450px;
+        }
 
-.container-info {
-    padding: 40px;
-    text-align: center;
-}
+        .divider {
+            width: 100%;
+            height: 4px;
+            background-color: var(--divider-color);
+            margin: 15px 0;
+            border-radius: 2px;
+        }
 
-.description {
-    font-size: 18px;
-    color: #333;
-    margin: 20px 0;
-    line-height: 1.5;
-}
+        .contact-details {
+            margin: 20px 0;
+        }
 
-.line {
-    width: 80%;
-    height: 3px;
-    background-color: #a8c3a0;
-    margin: 20px auto;
-    
-}
+        .contact-item {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
 
-.info {
-    font-size: 18px;
-    color: #111;
-    margin-bottom: 12px;
-}
+        .contact-item strong {
+            font-weight: 700;
+        }
 
-.info strong {
-    font-weight: 600;
-}
+        .footer-message {
+            font-size: 18px;
+            color: #333;
+            margin-top: 30px;
+            max-width: 480px;
+            line-height: 1.5;
+        }
 
-.footer-text {
-    margin-top: 40px;
-    font-size: 18px;
-    color: #333;
-    line-height: 1.5;
-}
+        /* Lado Direito - Imagem */
+        .image-section {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+        }
 
-.right {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+        /* Placeholder para sua imagem */
+        .illustration-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
 
-.image-placeholder {
-    width: 320px;
-    height: 500px;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.back {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 24px;
-}   
-
-.imagem-contato {
-    width: 500px;
-}
+        .illustration-placeholder img {
+            width: 100%;
+            margin-bottom: -99px; /* Ajuste para apoiar no fundo do card */
+        }
